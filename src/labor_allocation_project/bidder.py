@@ -182,7 +182,7 @@ def solve_bidding_mip(inst: Instance,
 if __name__ == "__main__":
     argparser = argparse.ArgumentParser()
     # with options: simple_three_project_instance, oversubscribed_seven_project_instance
-    argparser.add_argument("--instance", type=str, required=True, choices=["simple_three_project_instance", "oversubscribed_seven_project_instance", "two_projects_not_enough_capacity", "two_projects_hire_noncore_workers_instance"])
+    argparser.add_argument("--instance", type=str, required=True, choices=["two_projects_not_enough_capacity", "two_projects_hire_noncore_workers_instance", "simple_three_project_instance"])
     args = argparser.parse_args()
     match args.instance:
         case "simple_three_project_instance":
